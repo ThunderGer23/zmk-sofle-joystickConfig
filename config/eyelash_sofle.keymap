@@ -19,16 +19,6 @@
   };
 };
 
-tap_dance {
-    compatible = "zmk,tap-dance";
-
-    td_1 {
-        compatible = "zmk,tap-dance";
-        tap = <&kp N1>;         // Presionar una vez envía '1'
-        double_tap = <&kp EXCLAIM>; // Presionar dos veces envía '!'
-    };
-};
-
 &mmv_input_listener {
        input-processors = <&zip_xy_scaler 2 1>;
 };
@@ -63,7 +53,7 @@ tap_dance {
 
         layer0 {
             bindings = <
-&kp ESC     TD(td_1)     &kp N2        &kp N3        &kp N4  &kp N5       &kp UP_ARROW     &kp N6     &kp N7     &kp N8     &kp N9           &kp N0      &kp BACKSPACE
+&kp N1     &kp N1     &kp N2        &kp N3        &kp N4  &kp N5       &kp UP_ARROW     &kp N6     &kp N7     &kp N8     &kp N9           &kp N0      &kp BACKSPACE
 &kp TAB     &kp Q      &kp W         &kp E         &kp R   &kp T        &kp DOWN_ARROW   &kp Y      &kp U      &kp I      &kp O            &kp P       &kp BSLH
 &kp CAPS    &kp A      &kp S         &kp D         &kp F   &kp G        &kp LEFT_ARROW   &kp H      &kp J      &kp K      &kp L            &kp SEMI    &kp APOS
 &kp LSHFT   &kp Z      &kp X         &kp C         &kp V   &kp B        &kp RIGHT_ARROW  &kp N      &kp M      &kp COMMA  &kp DOT          &kp FSLH    &kp ENTER
