@@ -3,9 +3,9 @@ layers:
   LAYER0:
   - '&td1'
   - '&td2'
-  - '3'
-  - '4'
-  - {t: '5', s: '%'}
+  - '&td3'
+  - '&td4'
+  - '&td5'
   - '&td6'
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - {t: '7', s: '&'}
@@ -54,9 +54,9 @@ layers:
   - {t: /, s: '?'}
   - $$mdi:apple-keyboard-shift$$
   - $$mdi:volume-off$$
-  - $$mdi:apple-keyboard-control$$
-  - $$mdi:apple-keyboard-command$$
+  - '&comma'
   - $$mdi:apple-keyboard-option$$
+  - $$mdi:apple-keyboard-control$$
   - $$mdi:keyboard-space$$
   - layer1
   - '&Clicks'
