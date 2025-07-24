@@ -14,7 +14,7 @@ layers:
   - {t: '0', s: )}
   - '?'
   - {t: '`', s: '~'}
-  - $$mdi:keyboard-tab$$
+  - $$mdi:keyboard-esc$$
   - Q
   - W
   - E
