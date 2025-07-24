@@ -45,11 +45,30 @@
     };
 
     behaviors {
-        td6: tap_dance_0 {
+        td6: tap_dance_6 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&kp NUMBER_6>, <&kp RS(NUMBER_6)>;
+        };
+
+        td1: tap_dance_1 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            bindings = <&kp NUMBER_1>, <&kp RS(NUMBER_1)>;
+        };
+
+        td2: tap_dance_2 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            bindings = <&kp NUMBER_2>, <&kp RS(NUMBER_2)>;
+        };
+
+        Clicks: Clicks {
+            compatible = "zmk,behavior-tap-dance";
+            label = "CLICKS";
+            #binding-cells = <0>;
+            bindings = <&mkp LCLK>, <&mkp RCLK>;
         };
     };
 
@@ -58,11 +77,11 @@
 
         layer0 {
             bindings = <
-&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5  &td6         &mmv MOVE_UP     &kp N7     &kp N8     &kp N9     &kp N0           &kp QUESTION  &kp GRAVE
-&kp ESCAPE    &kp Q         &kp W         &kp E         &kp R   &kp T        &mmv MOVE_DOWN   &kp Y      &kp U      &kp I      &kp O            &kp P         &kp BSLH
-&kp CAPS      &kp A         &kp S         &kp D         &kp F   &kp G        &mmv MOVE_LEFT   &kp H      &kp J      &kp K      &kp L            &kp SEMI      &kp APOS
-&kp LSHFT     &kp Z         &kp X         &kp C         &kp V   &kp B        &mmv MOVE_RIGHT  &kp N      &kp M      &kp COMMA  &kp DOT          &kp FSLH      &kp ENTER
-&kp C_MUTE    &kp LCTRL     &kp LEFT_GUI  &kp LEFT_ALT  &mo 1   &kp SPACE    &mkp LCLK        &kp SPACE  &kp ENTER  &mo 2      &kp RIGHT_SHIFT  &kp DELETE
+&td1        &td2       &kp NUMBER_3  &kp NUMBER_4  &kp N5  &td6         &mmv MOVE_UP     &kp N7     &kp N8     &kp N9     &kp N0           &kp QUESTION  &kp EQUAL
+&kp ESCAPE  &kp Q      &kp W         &kp E         &kp R   &kp T        &mmv MOVE_DOWN   &kp Y      &kp U      &kp I      &kp O            &kp P         &kp BSLH
+&kp CAPS    &kp A      &kp S         &kp D         &kp F   &kp G        &mmv MOVE_LEFT   &kp H      &kp J      &kp K      &kp L            &kp SEMI      &kp APOS
+&kp LSHFT   &kp Z      &kp X         &kp C         &kp V   &kp B        &mmv MOVE_RIGHT  &kp N      &kp M      &kp COMMA  &kp DOT          &kp FSLH      &kp ENTER
+&kp C_MUTE  &kp LCTRL  &kp LEFT_GUI  &kp LEFT_ALT  &mo 1   &kp SPACE    &Clicks          &kp SPACE  &kp ENTER  &mo 2      &kp RIGHT_SHIFT  &kp DELETE
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
