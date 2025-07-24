@@ -8,12 +8,12 @@ layers:
   - {t: '5', s: '%'}
   - {t: Sft+6, h: KP 6}
   - $$mdi:arrow-up-bold$$
-  - {t: '6', s: ^}
   - {t: '7', s: '&'}
   - {t: '8', s: '*'}
   - {t: '9', s: (}
   - {t: '0', s: )}
-  - {t: '$$mdi:backspace$$', type: backspace}
+  - '?'
+  - {t: '`', s: '~'}
   - $$mdi:keyboard-tab$$
   - Q
   - W
