@@ -152,7 +152,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TDCOMMA";
             #binding-cells = <0>;
-            bindings = <&kp COMMA>, <&kp RS(COMMA)>;
+            bindings = <&kp MINUS>, <&kp QUESTION>;
         };
     };
 
@@ -167,7 +167,7 @@
         Correo: Correo {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none &kp N1 &kp N1 &kp N1 &kp N3 &kp N3 &kp N3 &kp N5 &kp AT_SIGN &kp O &kp N &kp U &kp R &kp I &kp S &kp C &kp P &kp DOT &kp C &kp O &kp M>;
+            bindings = <&none &kp N1 &kp N1 &kp N1 &kp N3 &kp N3 &kp N3 &kp N5 &kp AT_SIGN &kp AT &kp O &kp N &kp U &kp R &kp I &kp S &kp C &kp P &kp DOT &kp C &kp O &kp M>;
             label = "CORREO";
         };
 
