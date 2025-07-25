@@ -9,9 +9,9 @@ layers:
   - '&td6'
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - '&td7'
-  - {t: '8', s: '*'}
-  - {t: '9', s: (}
-  - {t: '0', s: )}
+  - '&td8'
+  - '&td9'
+  - '&td0'
   - '?'
   - '|'
   - $$mdi:keyboard-esc$$
@@ -49,9 +49,9 @@ layers:
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - N
   - M
-  - {t: ',', s: <}
-  - {t: ., s: '>'}
-  - {t: /, s: '?'}
+  - '&tdComma'
+  - '&tdDot'
+  - '&tdQuest'
   - $$mdi:apple-keyboard-shift$$
   - $$mdi:volume-off$$
   - '&comma'
@@ -62,7 +62,7 @@ layers:
   - '&Clicks'
   - '2'
   - $$mdi:keyboard-space$$
-  - {t: '''', s: '"'}
+  - MENU
   - LWIN
   - {t: '$$mdi:transfer$$', type: trans}
   layer1:
@@ -119,7 +119,7 @@ layers:
   - F12
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:volume-off$$
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&Password'
   - {t: '$$mdi:transfer$$', type: trans}
   - '&Empleado'
   - '&Correo'
@@ -129,7 +129,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&Password2'
   '2':
   - {h: '1', s: '$$mdi:bluetooth-connect$$'}
   - {h: '2', s: '$$mdi:bluetooth-connect$$'}
@@ -151,7 +151,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
-  - BT CLR ALL
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - F11
   - F12
