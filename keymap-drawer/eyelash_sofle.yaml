@@ -12,10 +12,10 @@ layers:
   - '&td8'
   - '&td9'
   - '&td0'
-  - '?'
+  - _
   - '|'
   - $$mdi:keyboard-esc$$
-  - Q
+  - '&Arrova'
   - W
   - E
   - R
@@ -49,7 +49,7 @@ layers:
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - N
   - M
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - '&coma'
   - '&tdDot'
   - '&tdQuest'
   - $$mdi:apple-keyboard-shift$$
