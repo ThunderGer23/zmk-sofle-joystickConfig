@@ -159,14 +159,49 @@
             compatible = "zmk,behavior-tap-dance";
             label = "COMA";
             #binding-cells = <0>;
-            bindings = <&kp COMMA>, <&kp RS(COMMA)>;
+            bindings = <&kp RS(COMMA)>, <&kp COMMA>;
         };
 
-        vocales: vocales {
+        vocala: vocala {
             compatible = "zmk,behavior-tap-dance";
-            label = "VOCALES";
+            label = "VOCALA";
             #binding-cells = <0>;
             bindings = <&kp A>, <&kp LEFT_BRACKET>;
+        };
+
+        vocale: vocale {
+            compatible = "zmk,behavior-tap-dance";
+            label = "VOCALE";
+            #binding-cells = <0>;
+            bindings = <&kp E>, <&kp LEFT_BRACKET>;
+        };
+
+        vocalu: vocalu {
+            compatible = "zmk,behavior-tap-dance";
+            label = "VOCALU";
+            #binding-cells = <0>;
+            bindings = <&kp U>, <&kp LEFT_BRACKET>;
+        };
+
+        vocali: vocali {
+            compatible = "zmk,behavior-tap-dance";
+            label = "VOCALI";
+            #binding-cells = <0>;
+            bindings = <&kp I>, <&kp LEFT_BRACKET>;
+        };
+
+        vocalo: vocalo {
+            compatible = "zmk,behavior-tap-dance";
+            label = "VOCALO";
+            #binding-cells = <0>;
+            bindings = <&kp O>, <&kp LEFT_BRACKET>;
+        };
+
+        pregunta: pregunta {
+            compatible = "zmk,behavior-tap-dance";
+            label = "PREGUNTA";
+            #binding-cells = <0>;
+            bindings = <&kp EQUAL>, <&kp PLUS>;
         };
     };
 
@@ -198,11 +233,11 @@
 
         layer0 {
             bindings = <
-&td1        &td2      &td3          &td4       &td5         &td6     &mmv MOVE_UP     &td7   &td8       &td9        &td0      &kp UNDER  &kp PIPE
-&kp ESCAPE  &Arrova   &kp W         &kp E      &kp R        &kp T    &mmv MOVE_DOWN   &kp Y  &kp U      &kp I       &kp O     &kp P      &kp BACKSPACE
-&kp CAPS    &vocales  &kp S         &kp D      &kp F        &kp G    &mmv MOVE_LEFT   &kp H  &kp J      &kp K       &kp L     &kp SEMI   &kp ENTER
-&kp TAB     &kp Z     &kp X         &kp C      &kp V        &kp B    &mmv MOVE_RIGHT  &kp N  &kp M      &coma       &tdDot    &tdQuest   &kp RSHIFT
-&kp C_MUTE  &none     &kp LEFT_ALT  &kp LCTRL  &spaceEnter  &mo 1    &Clicks          &mo 2  &kp SPACE  &kp K_MENU  &kp LWIN  &trans
+&td1        &td2     &td3          &td4       &td5         &td6     &mmv MOVE_UP     &td7   &td8       &td9        &td0      &tdQuest      &pregunta
+&kp ESCAPE  &Arrova  &kp W         &vocale    &kp R        &kp T    &mmv MOVE_DOWN   &kp Y  &vocalu    &vocali     &vocalo   &kp P         &kp BACKSPACE
+&kp CAPS    &vocala  &kp S         &kp D      &kp F        &kp G    &mmv MOVE_LEFT   &kp H  &kp J      &kp K       &kp L     &kp SEMI      &kp ENTER
+&kp TAB     &kp Z    &kp X         &kp C      &kp V        &kp B    &mmv MOVE_RIGHT  &kp N  &kp M      &coma       &tdDot    &kp KP_COMMA  &kp RSHIFT
+&kp C_MUTE  &none    &kp LEFT_ALT  &kp LCTRL  &spaceEnter  &mo 1    &Clicks          &mo 2  &kp SPACE  &kp K_MENU  &kp LWIN  &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -211,10 +246,10 @@
 
         layer_1 {
             bindings = <
-&rgb_ug RGB_OFF  &rgb_ug RGB_ON  &rgb_ug RGB_SPD  &rgb_ug RGB_SPI  &rgb_ug RGB_EFR  &rgb_ug RGB_EFF    &mmv MOVE_UP     &trans     &trans   &trans  &trans    &trans            &trans
-&trans           &kp GRAVE       &trans           &trans           &trans           &trans             &mmv MOVE_DOWN   &kp PG_UP  &kp END  &trans  &kp HOME  &kp MINUS         &kp EQUAL
-&trans           &kp TILDE       &trans           &trans           &kp UP_ARROW     &trans             &mmv MOVE_LEFT   &kp PG_DN  &trans   &trans  &trans    &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-&sys_reset       &trans          &trans           &kp LEFT         &kp DOWN_ARROW   &kp RIGHT          &mmv MOVE_RIGHT  &trans     &trans   &trans  &trans    &trans            &trans
+&rgb_ug RGB_OFF  &rgb_ug RGB_ON  &rgb_ug RGB_SPD  &rgb_ug RGB_SPI  &rgb_ug RGB_EFR  &rgb_ug RGB_EFF    &mmv MOVE_UP     &trans     &trans   &trans  &trans    &trans            &kp GRAVE
+&trans           &trans          &trans           &trans           &trans           &trans             &mmv MOVE_DOWN   &kp PG_UP  &kp END  &trans  &kp HOME  &kp MINUS         &kp EQUAL
+&trans           &trans          &trans           &trans           &kp UP_ARROW     &trans             &mmv MOVE_LEFT   &kp PG_DN  &trans   &trans  &trans    &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+&trans           &trans          &trans           &kp LEFT         &kp DOWN_ARROW   &kp RIGHT          &mmv MOVE_RIGHT  &trans     &trans   &trans  &trans    &trans            &trans
 &kp C_MUTE       &Password       &trans           &Empleado        &trans           &trans             &mkp LCLK        &trans     &trans   &trans  &trans    &Password2
             >;
 
