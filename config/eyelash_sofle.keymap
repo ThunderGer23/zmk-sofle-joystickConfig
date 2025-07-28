@@ -92,13 +92,6 @@
             bindings = <&kp N5>, <&kp RS(N5)>;
         };
 
-        comma: comma {
-            compatible = "zmk,behavior-tap-dance";
-            label = "COMMA";
-            #binding-cells = <0>;
-            bindings = <&kp RS(LESS_THAN)>, <&kp GREATER_THAN>;
-        };
-
         td7: td7 {
             compatible = "zmk,behavior-tap-dance";
             label = "TD7";
@@ -148,11 +141,18 @@
             bindings = <&msc>, <&msc>;
         };
 
-        tdComma: tdComma {
+        Arrova: Arrova {
             compatible = "zmk,behavior-tap-dance";
-            label = "TDCOMMA";
+            label = "ARROVA";
             #binding-cells = <0>;
-            bindings = <&kp MINUS>, <&kp QUESTION>;
+            bindings = <&kp Q>, <&kp RA(Q)>;
+        };
+
+        spaceEnter: spaceEnter {
+            compatible = "zmk,behavior-tap-dance";
+            label = "SPACEENTER";
+            #binding-cells = <0>;
+            bindings = <&kp SPACE>, <&kp ENTER>;
         };
     };
 
@@ -162,13 +162,6 @@
             #binding-cells = <0>;
             bindings = <&kp N1 &kp N1 &kp N1 &kp N3 &kp N3 &kp N3 &kp N5>;
             label = "EMPLEADO";
-        };
-
-        Correo: Correo {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&none &kp N1 &kp N1 &kp N1 &kp N3 &kp N3 &kp N3 &kp N5 &kp AT_SIGN &kp AT &kp O &kp N &kp U &kp R &kp I &kp S &kp C &kp P &kp DOT &kp C &kp O &kp M>;
-            label = "CORREO";
         };
 
         Password: Password {
@@ -191,11 +184,11 @@
 
         layer0 {
             bindings = <
-&td1        &td2    &td3          &td4       &td5       &td6     &mmv MOVE_UP     &td7   &td8       &td9        &td0      &kp QUESTION  &kp PIPE
-&kp ESCAPE  &kp Q   &kp W         &kp E      &kp R      &kp T    &mmv MOVE_DOWN   &kp Y  &kp U      &kp I       &kp O     &kp P         &kp BACKSPACE
-&kp CAPS    &kp A   &kp S         &kp D      &kp F      &kp G    &mmv MOVE_LEFT   &kp H  &kp J      &kp K       &kp L     &kp SEMI      &kp ENTER
-&kp TAB     &kp Z   &kp X         &kp C      &kp V      &kp B    &mmv MOVE_RIGHT  &kp N  &kp M      &tdComma    &tdDot    &tdQuest      &kp RSHIFT
-&kp C_MUTE  &comma  &kp LEFT_ALT  &kp LCTRL  &kp SPACE  &mo 1    &Clicks          &mo 2  &kp SPACE  &kp K_MENU  &kp LWIN  &trans
+&td1        &td2   &td3          &td4       &td5         &td6     &mmv MOVE_UP     &td7   &td8       &td9        &td0      &kp QUESTION  &kp PIPE
+&kp ESCAPE  &kp Q  &kp W         &kp E      &kp R        &kp T    &mmv MOVE_DOWN   &kp Y  &kp U      &kp I       &kp O     &kp P         &kp BACKSPACE
+&kp CAPS    &kp A  &kp S         &kp D      &kp F        &kp G    &mmv MOVE_LEFT   &kp H  &kp J      &kp K       &kp L     &kp SEMI      &kp ENTER
+&kp TAB     &kp Z  &kp X         &kp C      &kp V        &kp B    &mmv MOVE_RIGHT  &kp N  &kp M      &none       &tdDot    &tdQuest      &kp RSHIFT
+&kp C_MUTE  &none  &kp LEFT_ALT  &kp LCTRL  &spaceEnter  &mo 1    &Clicks          &mo 2  &kp SPACE  &kp K_MENU  &kp LWIN  &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -204,11 +197,11 @@
 
         layer_1 {
             bindings = <
-&rgb_ug RGB_OFF  &rgb_ug RGB_ON  &rgb_ug RGB_SPD  &rgb_ug RGB_SPI  &rgb_ug RGB_EFR  &rgb_ug RGB_EFF    &mmv MOVE_UP     &kp F6           &kp F7           &kp F8      &kp F9     &kp F10           &trans
-&trans           &kp GRAVE       &trans           &trans           &trans           &trans             &mmv MOVE_DOWN   &kp PG_UP        &kp END          &kp UP      &kp HOME   &kp MINUS         &kp EQUAL
-&trans           &kp TILDE       &trans           &trans           &kp UP_ARROW     &trans             &mmv MOVE_LEFT   &kp PG_DN        &kp LEFT         &kp DOWN    &kp RIGHT  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-&sys_reset       &trans          &trans           &kp LEFT         &kp DOWN_ARROW   &kp RIGHT          &mmv MOVE_RIGHT  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp INSERT  &kp F11    &kp F12           &trans
-&kp C_MUTE       &Password       &trans           &Empleado        &Correo          &trans             &mkp LCLK        &trans           &trans           &trans      &trans     &Password2
+&rgb_ug RGB_OFF  &rgb_ug RGB_ON  &rgb_ug RGB_SPD  &rgb_ug RGB_SPI  &rgb_ug RGB_EFR  &rgb_ug RGB_EFF    &mmv MOVE_UP     &trans     &trans   &trans  &trans    &trans            &trans
+&trans           &kp GRAVE       &trans           &trans           &trans           &trans             &mmv MOVE_DOWN   &kp PG_UP  &kp END  &trans  &kp HOME  &kp MINUS         &kp EQUAL
+&trans           &kp TILDE       &trans           &trans           &kp UP_ARROW     &trans             &mmv MOVE_LEFT   &kp PG_DN  &trans   &trans  &trans    &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+&sys_reset       &trans          &trans           &kp LEFT         &kp DOWN_ARROW   &kp RIGHT          &mmv MOVE_RIGHT  &trans     &trans   &trans  &trans    &trans            &trans
+&kp C_MUTE       &Password       &trans           &Empleado        &trans           &trans             &mkp LCLK        &trans     &trans   &trans  &trans    &Password2
             >;
 
             display-name = "layer1";
