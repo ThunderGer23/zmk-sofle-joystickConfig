@@ -12,23 +12,23 @@ layers:
   - '&td8'
   - '&td9'
   - '&td0'
-  - _
-  - '|'
+  - '&tdQuest'
+  - '&pregunta'
   - $$mdi:keyboard-esc$$
   - '&Arrova'
   - W
-  - E
+  - '&vocale'
   - R
   - T
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - Y
-  - U
-  - I
-  - O
+  - '&vocalu'
+  - '&vocali'
+  - '&vocalo'
   - P
   - {t: '$$mdi:backspace$$', type: backspace}
   - $$mdi:apple-keyboard-caps$$
-  - '&vocales'
+  - '&vocala'
   - S
   - D
   - F
@@ -51,7 +51,7 @@ layers:
   - M
   - '&coma'
   - '&tdDot'
-  - '&tdQuest'
+  - KP COMMA
   - $$mdi:apple-keyboard-shift$$
   - $$mdi:volume-off$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -78,9 +78,9 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '`', s: '~'}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -93,7 +93,7 @@ layers:
   - {t: '-', s: _}
   - {t: '=', s: +}
   - {t: '$$mdi:transfer$$', type: trans}
-  - '~'
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:arrow-up-bold$$
@@ -105,7 +105,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '[', s: '{'}
   - {t: ']', s: '}'}
-  - {t: '$$mdi:backup-restore$$', type: bootloader}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:arrow-left-bold$$
