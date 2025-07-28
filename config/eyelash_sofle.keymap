@@ -124,7 +124,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TDQUEST";
             #binding-cells = <0>;
-            bindings = <&kp MINUS>, <&kp UNDER>;
+            bindings = <&kp RS(MINUS)>, <&kp MINUS>;
         };
 
         tdDot: tdDot {
@@ -159,7 +159,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "COMA";
             #binding-cells = <0>;
-            bindings = <&kp RS(COMMA)>, <&kp COMMA>;
+            bindings = <&kp COMMA>, <&kp RS(COMMA)>;
         };
 
         vocala: vocala {
@@ -203,6 +203,27 @@
             #binding-cells = <0>;
             bindings = <&kp EQUAL>, <&kp PLUS>;
         };
+
+        tapend: tapend {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAPEND";
+            #binding-cells = <0>;
+            bindings = <&kp RIGHT>, <&kp END>;
+        };
+
+        taphome: taphome {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAPHOME";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_ARROW>, <&kp HOME>;
+        };
+
+        tapp: tapp {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAPP";
+            #binding-cells = <0>;
+            bindings = <&kp P>, <&kp RIGHT_BRACKET>;
+        };
     };
 
     macros {
@@ -226,6 +247,62 @@
             bindings = <&kp LS(W) &kp E &kp L &kp L &kp N &kp E &kp V &kp E &kp R &kp D &kp I &kp E>;
             label = "PASSWORD2";
         };
+
+        gitadd: gitadd {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp G &kp I &kp T &kp SPACE &kp A &kp D &kp D &kp SPACE>;
+            label = "GITADD";
+        };
+
+        gitstatus: gitstatus {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp G &kp I &kp T &kp SPACE &kp S &kp T &kp A &kp T &kp U &kp S &kp RET>;
+            label = "GITSTATUS";
+        };
+
+        gitcommit: gitcommit {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp G &kp I &kp T &kp SPACE &kp C &kp O &kp M &kp M &kp I &kp T &kp SPACE &kp MINUS &kp M &kp SPACE>;
+            label = "GITCOMMIT";
+        };
+
+        gitpull: gitpull {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp G &kp I &kp T &kp SPACE &kp P &kp U &kp L &kp L>;
+            label = "GITPULL";
+        };
+
+        gitpush: gitpush {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp G &kp I &kp T &kp SPACE &kp P &kp U &kp S &kp H>;
+            label = "GITPUSH";
+        };
+
+        gitlog: gitlog {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp G &kp I &kp T &kp SPACE &kp L &kp O &kp G &kp SPACE &kp MINUS &kp MINUS &kp O &kp N &kp E &kp L &kp I &kp N &kp E>;
+            label = "GITLOG";
+        };
+
+        gitbranch: gitbranch {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp G &kp I &kp T &kp SPACE &kp B &kp R &kp A &kp N &kp C &kp H &kp SPACE &kp MINUS &kp MINUS &kp A &kp L &kp L>;
+            label = "GITBRANCH";
+        };
+
+        gitcheck: gitcheck {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp G &kp I &kp T &kp SPACE &kp C &kp H &kp E &kp C &kp K &kp P &kp U &kp T &kp SPACE>;
+            label = "GITCHECK";
+        };
     };
 
     keymap {
@@ -233,11 +310,11 @@
 
         layer0 {
             bindings = <
-&td1        &td2     &td3          &td4       &td5         &td6     &mmv MOVE_UP     &td7   &td8       &td9        &td0      &tdQuest      &pregunta
-&kp ESCAPE  &Arrova  &kp W         &vocale    &kp R        &kp T    &mmv MOVE_DOWN   &kp Y  &vocalu    &vocali     &vocalo   &kp P         &kp BACKSPACE
-&kp CAPS    &vocala  &kp S         &kp D      &kp F        &kp G    &mmv MOVE_LEFT   &kp H  &kp J      &kp K       &kp L     &kp SEMI      &kp ENTER
-&kp TAB     &kp Z    &kp X         &kp C      &kp V        &kp B    &mmv MOVE_RIGHT  &kp N  &kp M      &coma       &tdDot    &kp KP_COMMA  &kp RSHIFT
-&kp C_MUTE  &none    &kp LEFT_ALT  &kp LCTRL  &spaceEnter  &mo 1    &Clicks          &mo 2  &kp SPACE  &kp K_MENU  &kp LWIN  &trans
+&td1        &td2     &td3          &td4       &td5         &td6     &mmv MOVE_UP     &td7   &td8       &td9        &td0      &tdQuest  &pregunta
+&kp ESCAPE  &Arrova  &kp W         &vocale    &kp R        &kp T    &mmv MOVE_DOWN   &kp Y  &vocalu    &vocali     &vocalo   &tapp     &kp BACKSPACE
+&kp CAPS    &vocala  &kp S         &kp D      &kp F        &kp G    &mmv MOVE_LEFT   &kp H  &kp J      &kp K       &kp L     &kp SEMI  &kp ENTER
+&kp TAB     &kp Z    &kp X         &kp C      &kp V        &kp B    &mmv MOVE_RIGHT  &kp N  &kp M      &coma       &tdDot    &coma     &kp RSHIFT
+&kp C_MUTE  &none    &kp LEFT_ALT  &kp LCTRL  &spaceEnter  &mo 1    &Clicks          &mo 2  &kp SPACE  &kp C_MENU  &kp LWIN  &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -246,24 +323,24 @@
 
         layer_1 {
             bindings = <
-&rgb_ug RGB_OFF  &rgb_ug RGB_ON  &rgb_ug RGB_SPD  &rgb_ug RGB_SPI  &rgb_ug RGB_EFR  &rgb_ug RGB_EFF    &mmv MOVE_UP     &trans     &trans   &trans  &trans    &trans            &kp GRAVE
-&trans           &trans          &trans           &trans           &trans           &trans             &mmv MOVE_DOWN   &kp PG_UP  &kp END  &trans  &kp HOME  &kp MINUS         &kp EQUAL
-&trans           &trans          &trans           &trans           &kp UP_ARROW     &trans             &mmv MOVE_LEFT   &kp PG_DN  &trans   &trans  &trans    &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-&trans           &trans          &trans           &kp LEFT         &kp DOWN_ARROW   &kp RIGHT          &mmv MOVE_RIGHT  &trans     &trans   &trans  &trans    &trans            &trans
-&kp C_MUTE       &Password       &trans           &Empleado        &trans           &trans             &mkp LCLK        &trans     &trans   &trans  &trans    &Password2
+&rgb_ug RGB_OFF  &rgb_ug RGB_ON  &rgb_ug RGB_SPD  &rgb_ug RGB_SPI  &rgb_ug RGB_EFR  &rgb_ug RGB_EFF    &mmv MOVE_UP     &trans     &trans  &trans  &trans  &trans            &kp GRAVE
+&trans           &trans          &trans           &trans           &trans           &trans             &mmv MOVE_DOWN   &kp PG_UP  &trans  &trans  &trans  &kp MINUS         &kp EQUAL
+&trans           &trans          &trans           &trans           &kp UP_ARROW     &trans             &mmv MOVE_LEFT   &kp PG_DN  &trans  &trans  &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+&trans           &trans          &trans           &taphome         &kp DOWN_ARROW   &tapend            &mmv MOVE_RIGHT  &trans     &trans  &trans  &trans  &trans            &trans
+&kp C_MUTE       &Password       &trans           &Empleado        &trans           &trans             &mkp LCLK        &trans     &trans  &trans  &trans  &Password2
             >;
 
             display-name = "layer1";
-            sensor-bindings = <&tdmouse SCRL_UP SCRL_DOWN>;
+            sensor-bindings = <&tdmouse SCRL_LEFT SCRL_RIGHT>;
         };
 
         layer_2 {
             bindings = <
-&bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans    &mmv MOVE_UP     &trans  &trans  &trans      &trans     &trans       &trans
-&bt BT_CLR    &bt BT_CLR_ALL  &trans        &trans        &trans        &trans    &mmv MOVE_DOWN   &trans  &trans  &trans      &trans     &kp UNDER    &kp PLUS
-&trans        &out OUT_BLE    &trans        &trans        &trans        &trans    &mmv MOVE_LEFT   &trans  &trans  &trans      &trans     &kp LBRC     &kp RBRC
-&bootloader   &sys_reset      &trans        &trans        &trans        &trans    &mmv MOVE_RIGHT  &trans  &trans  &sys_reset  &soft_off  &bootloader  &trans
-&trans        &trans          &trans        &trans        &trans        &trans    &mkp LCLK        &trans  &kp F5  &trans      &trans     &trans
+&bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans    &mmv MOVE_UP     &trans      &trans    &trans      &trans  &trans     &trans
+&bt BT_CLR    &bt BT_CLR_ALL  &trans        &trans        &trans        &trans    &mmv MOVE_DOWN   &gitpull    &gitpush  &trans      &trans  &kp UNDER  &kp PLUS
+&trans        &out OUT_BLE    &trans        &trans        &trans        &trans    &mmv MOVE_LEFT   &gitstatus  &gitadd   &gitcommit  &trans  &kp LBRC   &kp RBRC
+&trans        &trans          &trans        &trans        &trans        &trans    &mmv MOVE_RIGHT  &gitcheck   &gitlog   &gitbranch  &trans  &trans     &trans
+&trans        &trans          &trans        &trans        &trans        &trans    &mkp LCLK        &trans      &kp F5    &trans      &trans  &trans
             >;
 
             sensor-bindings = <&tdmouse MOVE_X(15) MOVE_Y(-15)>;
