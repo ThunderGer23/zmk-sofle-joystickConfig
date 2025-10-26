@@ -224,6 +224,13 @@
             #binding-cells = <0>;
             bindings = <&kp P>, <&kp RIGHT_BRACKET>;
         };
+
+        tdGuion: tdGuion {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TDGUION";
+            #binding-cells = <0>;
+            bindings = <&kp FSLH>, <&kp RS(FSLH)>;
+        };
     };
 
     macros {
@@ -237,7 +244,7 @@
         Password: Password {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp N2 &kp N0 &kp N1 &kp N2 &kp N0 &kp N1 &kp N0 &kp N2 &kp N7 &kp N3 &kp DOT &kp LS(W) &kp E &kp L &kp L &kp LS(T) &kp LS(G) &kp LS(G) &kp LS(S) &kp N2 &kp N8>;
+            bindings = <&kp N2 &kp N0 &kp N1 &kp N2 &kp N0 &kp N1 &kp N0 &kp N2 &kp N7 &kp N3 &kp DOT &kp LS(W) &kp E &kp L &kp L &kp LS(T) &kp LS(G) &kp LS(G) &kp LS(S) &kp N2 &kp NUMBER_9>;
             label = "PASSWORD";
         };
 
@@ -300,7 +307,7 @@
         gitcheck: gitcheck {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp G &kp I &kp T &kp SPACE &kp C &kp H &kp E &kp C &kp K &kp P &kp U &kp T &kp SPACE>;
+            bindings = <&kp G &kp I &kp T &kp SPACE &kp C &kp H &kp E &kp C &kp K &kp O &kp U &kp T &kp SPACE>;
             label = "GITCHECK";
         };
     };
@@ -313,7 +320,7 @@
 &td1        &td2     &td3          &td4       &td5         &td6     &mmv MOVE_UP     &td7   &td8       &td9            &td0      &tdQuest  &pregunta
 &kp ESCAPE  &Arrova  &kp W         &vocale    &kp R        &kp T    &mmv MOVE_DOWN   &kp Y  &vocalu    &vocali         &vocalo   &tapp     &kp BACKSPACE
 &kp CAPS    &vocala  &kp S         &kp D      &kp F        &kp G    &mmv MOVE_LEFT   &kp H  &kp J      &kp K           &kp L     &kp SEMI  &kp ENTER
-&kp TAB     &kp Z    &kp X         &kp C      &kp V        &kp B    &mmv MOVE_RIGHT  &kp N  &kp M      &coma           &tdDot    &kp FSLH  &kp RSHIFT
+&kp TAB     &kp Z    &kp X         &kp C      &kp V        &kp B    &mmv MOVE_RIGHT  &kp N  &kp M      &coma           &tdDot    &tdGuion  &kp RSHIFT
 &kp C_MUTE  &none    &kp LEFT_ALT  &kp LCTRL  &spaceEnter  &mo 1    &Clicks          &mo 2  &kp SPACE  &kp UNDERSCORE  &kp LWIN  &trans
             >;
 
