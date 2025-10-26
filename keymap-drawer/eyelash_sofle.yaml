@@ -51,7 +51,7 @@ layers:
   - M
   - '&coma'
   - '&tdDot'
-  - '&coma'
+  - {t: '-', s: _}
   - $$mdi:apple-keyboard-shift$$
   - $$mdi:volume-off$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
