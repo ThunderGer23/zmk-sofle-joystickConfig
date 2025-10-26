@@ -310,11 +310,11 @@
 
         layer0 {
             bindings = <
-&td1        &td2     &td3          &td4       &td5         &td6     &mmv MOVE_UP     &td7   &td8       &td9        &td0      &tdQuest   &pregunta
-&kp ESCAPE  &Arrova  &kp W         &vocale    &kp R        &kp T    &mmv MOVE_DOWN   &kp Y  &vocalu    &vocali     &vocalo   &tapp      &kp BACKSPACE
-&kp CAPS    &vocala  &kp S         &kp D      &kp F        &kp G    &mmv MOVE_LEFT   &kp H  &kp J      &kp K       &kp L     &kp SEMI   &kp ENTER
-&kp TAB     &kp Z    &kp X         &kp C      &kp V        &kp B    &mmv MOVE_RIGHT  &kp N  &kp M      &coma       &tdDot    &kp MINUS  &kp RSHIFT
-&kp C_MUTE  &none    &kp LEFT_ALT  &kp LCTRL  &spaceEnter  &mo 1    &Clicks          &mo 2  &kp SPACE  &kp C_MENU  &kp LWIN  &trans
+&td1        &td2     &td3          &td4       &td5         &td6     &mmv MOVE_UP     &td7   &td8       &td9            &td0      &tdQuest   &pregunta
+&kp ESCAPE  &Arrova  &kp W         &vocale    &kp R        &kp T    &mmv MOVE_DOWN   &kp Y  &vocalu    &vocali         &vocalo   &tapp      &kp BACKSPACE
+&kp CAPS    &vocala  &kp S         &kp D      &kp F        &kp G    &mmv MOVE_LEFT   &kp H  &kp J      &kp K           &kp L     &kp SEMI   &kp ENTER
+&kp TAB     &kp Z    &kp X         &kp C      &kp V        &kp B    &mmv MOVE_RIGHT  &kp N  &kp M      &coma           &tdDot    &kp MINUS  &kp RSHIFT
+&kp C_MUTE  &none    &kp LEFT_ALT  &kp LCTRL  &spaceEnter  &mo 1    &Clicks          &mo 2  &kp SPACE  &kp UNDERSCORE  &kp LWIN  &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -336,10 +336,10 @@
 
         layer_2 {
             bindings = <
-&bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans    &mmv MOVE_UP     &trans      &trans    &trans      &trans  &trans     &trans
-&bt BT_CLR    &bt BT_CLR_ALL  &trans        &trans        &trans        &trans    &mmv MOVE_DOWN   &gitpull    &gitpush  &trans      &trans  &kp UNDER  &kp PLUS
-&trans        &out OUT_BLE    &trans        &trans        &trans        &trans    &mmv MOVE_LEFT   &gitstatus  &gitadd   &gitcommit  &trans  &kp LBRC   &kp RBRC
-&trans        &trans          &trans        &trans        &trans        &trans    &mmv MOVE_RIGHT  &gitcheck   &gitlog   &gitbranch  &trans  &trans     &trans
+&bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans    &mmv MOVE_UP     &gitpull    &gitpush  &trans      &trans  &trans     &trans
+&bt BT_CLR    &bt BT_CLR_ALL  &trans        &trans        &trans        &trans    &mmv MOVE_DOWN   &gitstatus  &gitadd   &gitcommit  &trans  &kp UNDER  &kp PLUS
+&trans        &out OUT_BLE    &trans        &trans        &trans        &trans    &mmv MOVE_LEFT   &gitcheck   &gitlog   &gitbranch  &trans  &kp LBRC   &kp RBRC
+&trans        &trans          &trans        &trans        &trans        &trans    &mmv MOVE_RIGHT  &kp DELETE  &trans    &trans      &trans  &trans     &trans
 &trans        &trans          &trans        &trans        &trans        &trans    &mkp LCLK        &trans      &kp F5    &trans      &trans  &trans
             >;
 
