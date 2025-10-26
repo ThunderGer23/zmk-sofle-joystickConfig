@@ -62,7 +62,7 @@ layers:
   - '&Clicks'
   - '2'
   - $$mdi:keyboard-space$$
-  - MENU
+  - _
   - LWIN
   - {t: '$$mdi:transfer$$', type: trans}
   layer1:
@@ -138,8 +138,8 @@ layers:
   - {h: '5', s: '$$mdi:bluetooth-connect$$'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&gitpull'
+  - '&gitpush'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -151,9 +151,9 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
-  - '&gitpull'
-  - '&gitpush'
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&gitstatus'
+  - '&gitadd'
+  - '&gitcommit'
   - {t: '$$mdi:transfer$$', type: trans}
   - _
   - +
@@ -164,9 +164,9 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
-  - '&gitstatus'
-  - '&gitadd'
-  - '&gitcommit'
+  - '&gitcheck'
+  - '&gitlog'
+  - '&gitbranch'
   - {t: '$$mdi:transfer$$', type: trans}
   - '{'
   - '}'
@@ -177,9 +177,9 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
-  - '&gitcheck'
-  - '&gitlog'
-  - '&gitbranch'
+  - $$mdi:backspace-reverse-outline$$
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
