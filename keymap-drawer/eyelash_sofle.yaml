@@ -54,7 +54,7 @@ layers:
   - '&tdGuion'
   - $$mdi:apple-keyboard-shift$$
   - $$mdi:volume-off$$
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - <
   - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-control$$
   - '&spaceEnter'
@@ -62,7 +62,7 @@ layers:
   - '&Clicks'
   - '2'
   - $$mdi:keyboard-space$$
-  - _
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - LWIN
   - {t: '$$mdi:transfer$$', type: trans}
   layer1:
