@@ -272,7 +272,7 @@
         gitcommit: gitcommit {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp G &kp I &kp T &kp SPACE &kp C &kp O &kp M &kp M &kp I &kp T &kp SPACE &kp MINUS &kp M &kp SPACE>;
+            bindings = <&kp G &kp I &kp T &kp SPACE &kp C &kp O &kp M &kp M &kp I &kp T &kp SPACE &kp FSLH &kp M &kp SPACE>;
             label = "GITCOMMIT";
         };
 
@@ -293,14 +293,14 @@
         gitlog: gitlog {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp G &kp I &kp T &kp SPACE &kp L &kp O &kp G &kp SPACE &kp MINUS &kp MINUS &kp O &kp N &kp E &kp L &kp I &kp N &kp E>;
+            bindings = <&kp G &kp I &kp T &kp SPACE &kp L &kp O &kp G &kp SPACE &kp FSLH &kp FSLH &kp O &kp N &kp E &kp L &kp I &kp N &kp E>;
             label = "GITLOG";
         };
 
         gitbranch: gitbranch {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp G &kp I &kp T &kp SPACE &kp B &kp R &kp A &kp N &kp C &kp H &kp SPACE &kp MINUS &kp MINUS &kp A &kp L &kp L>;
+            bindings = <&kp G &kp I &kp T &kp SPACE &kp B &kp R &kp A &kp N &kp C &kp H &kp SPACE &kp FSLH &kp FSLH &kp A &kp L &kp L>;
             label = "GITBRANCH";
         };
 
