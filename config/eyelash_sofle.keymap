@@ -345,7 +345,7 @@
             bindings = <
 &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans    &mmv MOVE_UP     &gitpull    &gitpush  &trans      &trans  &trans     &trans
 &bt BT_CLR    &bt BT_CLR_ALL  &trans        &trans        &trans        &trans    &mmv MOVE_DOWN   &gitstatus  &gitadd   &gitcommit  &trans  &kp UNDER  &kp PLUS
-&trans        &out OUT_BLE    &trans        &trans        &trans        &trans    &mmv MOVE_LEFT   &gitcheck   &gitlog   &gitbranch  &trans  &kp LBRC   &kp RBRC
+&trans        &out OUT_TOG    &trans        &trans        &trans        &trans    &mmv MOVE_LEFT   &gitcheck   &gitlog   &gitbranch  &trans  &kp LBRC   &kp RBRC
 &trans        &trans          &trans        &trans        &trans        &trans    &mmv MOVE_RIGHT  &kp DELETE  &trans    &trans      &trans  &trans     &trans
 &trans        &trans          &trans        &trans        &trans        &trans    &mkp LCLK        &trans      &kp F5    &trans      &trans  &trans
             >;
