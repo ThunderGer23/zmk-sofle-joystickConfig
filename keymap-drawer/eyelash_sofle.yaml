@@ -27,7 +27,7 @@ layers:
   - '&vocalo'
   - '&tapp'
   - {t: '$$mdi:backspace$$', type: backspace}
-  - $$mdi:apple-keyboard-caps$$
+  - $$mdi:keyboard-tab$$
   - '&vocala'
   - S
   - D
@@ -40,7 +40,7 @@ layers:
   - L
   - {t: ;, s: ':'}
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - $$mdi:keyboard-tab$$
+  - $$mdi:apple-keyboard-caps$$
   - Z
   - X
   - C
