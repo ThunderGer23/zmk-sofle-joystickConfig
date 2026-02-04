@@ -331,7 +331,7 @@
         layer_1 {
             bindings = <
 &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &rgb_ug RGB_SPD  &rgb_ug RGB_SPI  &rgb_ug RGB_EFR  &rgb_ug RGB_EFF    &mmv MOVE_UP     &trans     &trans  &trans  &trans  &trans            &kp GRAVE
-&trans           &trans          &trans           &trans           &trans           &trans             &mmv MOVE_DOWN   &kp PG_UP  &trans  &trans  &trans  &kp MINUS         &kp EQUAL
+&trans           &none           &trans           &trans           &trans           &trans             &mmv MOVE_DOWN   &kp PG_UP  &trans  &trans  &trans  &kp MINUS         &kp EQUAL
 &trans           &trans          &trans           &trans           &kp UP_ARROW     &trans             &mmv MOVE_LEFT   &kp PG_DN  &trans  &trans  &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
 &trans           &trans          &trans           &taphome         &kp DOWN_ARROW   &tapend            &mmv MOVE_RIGHT  &trans     &trans  &trans  &trans  &trans            &trans
 &kp C_MUTE       &Password       &trans           &Empleado        &trans           &trans             &mkp LCLK        &trans     &trans  &trans  &trans  &Password2
